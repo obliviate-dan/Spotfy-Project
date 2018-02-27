@@ -1,0 +1,398 @@
+
+/*
+* @autor Daniel J. TenÃ³rio
+* @version 1.0
+ */
+
+/*:::::::::::::::::::Layout;::::::::::::::::::::*/
+
+html, body, .capa{
+  height:100%;
+  overflow: auto;
+}
+
+body {
+	background: url('imagens/capa.png');
+	background-attachment: fixed; 
+	font-family: "Circular Std Bold",Helvetica,Arial,sans-serif;
+	overflow-x: hidden;
+}
+
+/*:::Navegation Bar::::::*/
+.img-logo {
+	height: 40px;
+	width: 132px;
+	display: block;
+	background: url('imagens/spotify.svg') no-repeat;
+	background-size: contain;
+	color: transparent;
+}
+
+nav.navbar-transparent {
+	background: rgba(0, 0, 0, 0.6);
+	border: none;
+	
+}
+
+.navbar-brand {
+	padding: 5px 15px;
+}
+
+.separetor {
+	width: 1px;
+	height: 16px;
+	background: white;
+	margin: 16px 10px;
+}
+.navbar-inverse .navbar-nav>li>a, 
+footer .nav a{
+	color: white;
+}
+.navbar-inverse .navbar-nav>li>a:Hover, 
+footer .nav a:Hover {
+	color: #1db954;
+	background: none;
+}
+
+/*:::::::Capa Principal::::::*/
+
+.capa {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.capa2 {
+	background: url('imagens/ruido.png');
+	background-attachment: fixed;	
+	display: table;
+	width: 100%;
+}
+
+.tex-capa {
+	text-align: center;
+	color: white;
+	display: table-cell;
+	vertical-align: middle;
+	padding-bottom: 20px;
+
+}
+
+
+/*:::::::BotÃµes::::::*/
+
+.btn-custom {
+	display: inline-block;
+	font-weight: 700;
+	vertical-align: middle;
+	letter-spacing: 2px;
+	color: white;
+	font-size: 14px;
+	text-align: center;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	padding: 15px 48px 14px;
+	margin-top: 28px;
+	margin-right: 8px;
+	min-width: 160px;
+	white-space: normal;
+	transition: background 0.5s, color 0.5s;
+
+}
+
+.btn-green {
+	background: #1db954;
+}
+
+.btn-green:Hover {
+	color: #fff;
+	background: #1ed550;
+}
+
+.btn-white {
+	border: 2px solid white;
+}
+
+.btn-white:Hover {
+	border: 2px solid white;
+	color: black;
+	background: #FFF;
+}
+
+/*:::::::ServiÃ§Ãµes::::::*/
+
+#servicos {
+	background: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+}
+
+.albuns {
+	padding-top: 24px;
+	display: block;
+	float: right;
+}
+
+.Pla934 {
+	padding: 0px;
+	margin: 0px;
+	width: 290px;
+	float: right;
+
+}
+
+/*:::::::Recursos::::::*/
+
+#resursos {
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+}
+
+
+.rotation {
+	transform: rotate(-30deg);
+}
+
+/*:::::::Dispositivos::::::*/
+
+#devices {
+	background: #FFF;
+	padding: 134px 0px 134px 0px;
+	position: relative;
+}
+
+/*:::::::RodapÃ©::::::*/
+
+footer {
+	background: #000;
+	padding: 50px 0px 20px 0px;
+	position: relative;
+}
+
+.sociais {
+	float: right
+}
+
+/*::::::::::::::::::::Tipografia:::::::::::::::::::::*/
+
+h1 {
+	font-size: 79px;
+	font-weight: 900;
+	letter-spacing: -0.04em;
+	margin-bottom: 12px;
+
+
+}
+
+h2 {
+	font-size: 50px;
+	font-weight: 900;
+	letter-spacing: -0.04em;
+	line-height: 1.4;
+	margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+p {
+	font-size: 18px;
+	font-family: Circular Std Book;
+	text-align: left;
+	margin: 0.5em 0 1em;
+	padding-bottom: 24px;
+}
+
+#rodape h4 {
+	color: #919496;
+	font-size: 12px;
+}
+
+.text-color {
+	color: #f0e3f4;
+	padding-top: 24px;
+
+}
+
+.text-conta h2 {
+
+	text-align: center;
+	color: #161619;
+	font-size: 48px;
+	font-weight: 900;
+	letter-spacing: -0.09px;
+	line-height: 1.2;
+	margin-top: -15px;
+	margin-bottom: 24px;
+}
+
+#devices li { 
+	padding: 0px 12px;
+	display: inline-block;
+}
+
+#devices li::after {
+	color: #ededed;
+	list-style: disc;
+	margin: 16px 10px;
+}
+
+.disc {
+	color: #000;
+}
+
+.type-devices {
+	padding-top: 24px;
+}
+
+.type-devices a {
+	color: #1db954;
+	text-decoration: none;
+}
+
+.text-conta a:Hover {
+	color: #1ed550;
+	text-decoration: none;
+}
+
+ul {
+	padding: 0px;
+}
+
+/*::::::::::::::::Media query:::::::::::::::::::::::*/
+
+@media screen and (min-width: 767px) {
+	h1 {
+		font-size: 64px;
+		margin-bottom: 16px;
+	}
+	
+
+	.btn-custom {
+		margin: 28px 8px 0px 0px;
+	}
+	.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+		padding-top: 10px;
+
+	}
+
+	nav.navbar-transparent {
+		background-color: black;
+	}	
+	
+	.img-logo {
+	height: 27px;
+	width: 89px;
+	}
+
+	.text-conta h2 {
+		text-align: center;
+		font-size: 48px;
+	}
+	
+}
+
+@media screen and (max-width: 768px) {
+		
+
+	h1 {
+		font-size: 48px;
+	} 
+
+	h2 {
+    	font-size: 32px;
+	}	
+
+	h3 {
+		font-size: 20px;
+		margin-top: 24px;
+		margin-bottom: 12px;
+	}
+
+	p {
+		font-size: 15px;
+		margin-top: 0.05em;
+		margin-bottom: 1em;
+
+	}
+
+	.Pla934 {
+		padding: 0px;
+		margin: 0px;
+		width: 50%;
+		float: right;
+	}
+
+	.albuns {
+		padding-top: 0px;
+	}
+
+	#servicos {
+		padding-bottom: 0px;
+	}
+
+	#devices {
+		padding-top: 64px;
+	}
+
+	.img-logo {
+	height: 27px;
+	width: 89px;
+	}
+
+	.text-color {
+		float: left;
+		list-style: none;
+	}
+
+	.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+		background-color: black;
+	}
+
+	.navbar-inverse .navbar-toggle {
+		border: none;
+		padding: 0px;	
+	}	
+	nav.navbar-transparent {
+		padding-top: 15px;
+		width: 100%;
+		background: black;
+	}
+	.img-logo {
+		height: 27px;
+		width: 89px;
+	}	
+		
+}
+
+@media screen and (min-width: 992px) {
+	h1 {
+		font-size: 80px;
+	}
+	.img-logo {
+	height: 41px;
+	width: 132px;
+	}
+	nav.navbar-transparent {
+		padding: 15px 0px;
+		background: rgba(0, 0, 0, 0.6);
+		border: none;	
+	}	
+}
+
+
+@media screen and (min-width: 1200px) {
+	h1 {
+		font-size: 80px;
+	}
+	.img-logo {
+	height: 41px;
+	width: 132px;
+	}
+	nav.navbar-transparent {
+		padding: 15px 0px;
+		background: rgba(0, 0, 0, 0.6);
+		border: none;	
+	}	 
+}
