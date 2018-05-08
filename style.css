@@ -14,7 +14,7 @@ html, body, .capa{
 body {
 	background: url('imagens/capa.png');
 	background-attachment: fixed; 
-	font-family: "Circular Std Bold",Helvetica,Arial,sans-serif;
+	font-family: "Circular Std Bold",Helvetica,Arial,sans-serif !important;
 	overflow-x: hidden;
 }
 
@@ -178,13 +178,15 @@ footer {
 
 /*::::::::::::::::::::Tipografia:::::::::::::::::::::*/
 
+a {
+	font-weight: 600;
+}
+
 h1 {
 	font-size: 79px;
 	font-weight: 900;
 	letter-spacing: -0.04em;
 	margin-bottom: 12px;
-
-
 }
 
 h2 {
@@ -212,11 +214,9 @@ p {
 .text-color {
 	color: #f0e3f4;
 	padding-top: 24px;
-
 }
 
 .text-conta h2 {
-
 	text-align: center;
 	color: #161619;
 	font-size: 48px;
